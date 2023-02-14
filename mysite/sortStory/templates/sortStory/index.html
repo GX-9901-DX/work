@@ -1,4 +1,9 @@
 {% extends './base.html' %}
 {% block content %}
-<h1>Title:, {{ title }}</h1>
+{% for sortstory in story_list %}
+  <h1>Title: {{ sortstory.title }}</h1>
+  <p>{{  }}</p>
+  <h2><u>内容</u></h2>
+  <p>{{ sortstory.sortstory }}</p>
+{% endfor %}
 {% endblock %}
